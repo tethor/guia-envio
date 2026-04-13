@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía de Envíos – POCAPAY GO</title>
+  <meta name="description" content="¿Cómo recibir tu pedido de POCAPAY GO? Sigue esta guía para solicitar tu envío fácilmente.">
+  <meta property="og:title" content="Guía de Envíos – POCAPAY GO">
+  <meta property="og:description" content="Todo lo que necesitas para recibir tu merch kpop desde Corea 🇰🇷">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --pink:        #FF3E82;
+      --pink-light:  #FFB0CC;
+      --pink-bg:     #FFF5F9;
+      --pink-soft:   #FFF0F6;
+      --yellow:      #FFB800;
+      --purple:      #8855BB;
+      --purple-bg:   #FAF0FF;
+      --text:        #1a1a1a;
+      --text-muted:  #888;
+      --bg:          #FFF5F9;
+      --card-bg:     #ffffff;
+      --border:      #FFB0CC;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      min-height: 100vh;
+      color: var(--text);
+    }
+
+    /* ── TOP BAR ── */
+    .topbar {
+      background: var(--pink);
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      padding: 8px 16px;
+      text-transform: uppercase;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: #fff;
+      border-bottom: 2px solid var(--pink-light);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .logo-text {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--pink);
+      letter-spacing: -0.5px;
+    }
+    .logo-text span { color: var(--yellow); }
+
+    .header-tag {
+      background: var(--pink-soft);
+      border: 1px solid var(--pink-light);
+      color: var(--pink);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* ── MAIN ── */
+    main {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 24px 16px 56px;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      text-align: center;
+      padding: 28px 0 22px;
+    }
+
+    .bunny {
+      font-size: 48px;
+      display: block;
+      margin-bottom: 8px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-6px); }
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--pink);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .hero-title {
+      font-size: 30px;
+      font-weight: 900;
+      color: var(--pink);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .hero-title span { color: var(--yellow); }
+
+    .hero-sub {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* ── CARD base ── */
+    .card {
+      background: var(--card-bg);
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 24px rgba(255, 62, 130, 0.07);
+    }
+
+    .card-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--pink);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ── EMAIL BLOCK ── */
+    .email-block {
+      background: linear-gradient(135deg, #fff5f9 0%, #fff0fb 100%);
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 24px rgba(255, 62, 130, 0.08);
+      text-align: center;
+    }
+
+    .email-label-small {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .email-address {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--pink);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 900;
+      padding: 10px 22px;
+      border-radius: 50px;
+      box-shadow: 0 4px 18px rgba(255, 62, 130, 0.35);
+      margin-bottom: 12px;
+      word-break: break-all;
+    }
+
+    .hint-box {
+      background: var(--pink-soft);
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 12px;
+      color: #C0507A;
+      line-height: 1.55;
+    }
+
+    /* ── SUBJECT BAR ── */
+    .subject-bar {
+      background: linear-gradient(90deg, #FF3E82 0%, #FF7BAC 100%);
+      border-radius: 14px;
+      padding: 14px 18px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 18px rgba(255, 62, 130, 0.22);
+    }
+
+    .subject-bar .s-pre {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 4px;
+    }
+
+    .subject-bar .s-val {
+      font-size: 16px;
+      font-weight: 900;
+      color: #fff;
+    }
+
+    /* ── FIELD LIST ── */
+    .fields-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .field-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: var(--pink-bg);
+      border: 1.5px solid transparent;
+      border-radius: 14px;
+      padding: 12px 14px;
+      transition: border-color 0.18s, box-shadow 0.18s, transform 0.15s;
+    }
+
+    .field-row:hover {
+      border-color: var(--pink-light);
+      box-shadow: 0 2px 14px rgba(255, 62, 130, 0.10);
+      transform: translateX(3px);
+    }
+
+    .field-row.highlight {
+      background: linear-gradient(135deg, #fff0f6 0%, #fce8f8 100%);
+      border-color: var(--pink-light);
+    }
+
+    .field-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+
+    .field-text { display: flex; flex-direction: column; gap: 2px; }
+
+    .field-name { font-size: 14px; font-weight: 700; color: var(--text); }
+    .field-name.accent { color: var(--pink); }
+
+    .field-desc { font-size: 11px; font-weight: 600; color: #C0507A; line-height: 1.4; }
+
+    .field-num {
+      margin-left: auto;
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      background: var(--pink-light);
+      color: var(--pink);
+      border-radius: 50%;
+      font-size: 10px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+
+    /* ── DIVIDER ── */
+    .section-divider {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 6px 0 2px;
+    }
+
+    .section-divider span {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .section-divider::before,
+    .section-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── DECO DOTS (Korean accent) ── */
+    .deco-dots {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      margin: 4px 0 14px;
+    }
+    .deco-dots span {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--pink-light);
+      display: inline-block;
+    }
+    .deco-dots span:nth-child(2) {
+      background: var(--yellow);
+      width: 8px; height: 8px;
+    }
+
+    /* ── IG BUTTON ── */
+    .ig-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #FF3E82 0%, #C936A0 100%);
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 900;
+      padding: 14px 24px;
+      border-radius: 16px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 18px rgba(255, 62, 130, 0.30);
+      transition: transform 0.15s, box-shadow 0.15s;
+      letter-spacing: 0.3px;
+    }
+
+    .ig-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(255, 62, 130, 0.38);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 28px 20px 36px;
+      font-size: 13px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--pink-light);
+      margin-top: 12px;
+    }
+
+    .footer-hearts {
+      display: block;
+      font-size: 18px;
+      color: var(--pink-light);
+      letter-spacing: 6px;
+      margin-bottom: 8px;
+    }
+
+    footer a { color: var(--pink); font-weight: 700; text-decoration: none; }
+
+    /* ── MOBILE ── */
+    @media (max-width: 480px) {
+      .hero-title { font-size: 26px; }
+      .bunny { font-size: 40px; }
+      .card, .email-block { padding: 16px; }
+      .email-address { font-size: 13px; padding: 9px 16px; }
+      .field-name { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">✦ Recibe tu merch kpop desde Corea · POCAPAY GO ✦</div>
+
+  <header>
+    <div class="logo-text">POCA<span>PAY</span> GO</div>
+    <div class="header-tag">📦 Guía de Envíos</div>
+  </header>
+
+  <main>
+
+    <div class="hero">
+      <span class="bunny">📦</span>
+      <div class="hero-badge">✦ pocapay go ✦</div>
+      <h1 class="hero-title">Guía de <span>Envíos</span></h1>
+      <p class="hero-sub">Todo lo que necesitas para recibir tu pedido 🇰🇷</p>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="email-block">
+      <div class="email-label-small">Escríbenos a este correo</div>
+      <div class="email-address">✉️ envios@pocapay.com</div>
+      <div class="hint-box">
+        💡 Incluye <strong>toda</strong> la información exacta y completa — esto nos ayuda a procesar tu envío sin retrasos.
+      </div>
+    </div>
+
+    <!-- ASUNTO -->
+    <div class="subject-bar">
+      <div class="s-pre">📌 Asunto del correo</div>
+      <div class="s-val">Tu Nombre Completo</div>
+    </div>
+
+    <!-- CAMPOS -->
+    <div class="card">
+      <div class="card-label">📋 Contenido del correo</div>
+      <div class="fields-list">
+
+        <div class="field-row highlight">
+          <div class="field-icon">🌸</div>
+          <div class="field-text">
+            <div class="field-name accent">Lista de productos</div>
+            <div class="field-desc">Muy detallada — incluye todos los artículos que recibirás</div>
+          </div>
+          <div class="field-num">1</div>
+        </div>
+
+        <div class="section-divider"><span>dirección de entrega</span></div>
+
+        <div class="field-row">
+          <div class="field-icon">🌸</div>
+          <div class="field-text"><div class="field-name">Nombre del destinatario</div></div>
+          <div class="field-num">2</div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-icon">🌸</div>
+          <div class="field-text"><div class="field-name">Calle y número</div></div>
+          <div class="field-num">3</div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-icon">🌸</div>
+          <div class="field-text"><div class="field-name">Colonia</div></div>
+          <div class="field-num">4</div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-icon">🌸</div>
+          <div class="field-text"><div class="field-name">Ciudad</div></div>
+          <div class="field-num">5</div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-icon">🌸</div>
+          <div class="field-text"><div class="field-name">Estado</div></div>
+          <div class="field-num">6</div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-icon">🌸</div>
+          <div class="field-text"><div class="field-name">Código postal</div></div>
+          <div class="field-num">7</div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-icon">🌸</div>
+          <div class="field-text"><div class="field-name">Teléfono o contacto</div></div>
+          <div class="field-num">8</div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-icon">🌸</div>
+          <div class="field-text">
+            <div class="field-name">Referencia</div>
+            <div class="field-desc">Entre calles o punto de referencia cercano</div>
+          </div>
+          <div class="field-num">9</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="deco-dots"><span></span><span></span><span></span></div>
+
+    <a class="ig-btn" href="https://instagram.com/pocapay_mx" target="_blank" rel="noopener">
+      📸 ¿Dudas? Escríbenos en @pocapay_mx
+    </a>
+
+  </main>
+
+  <footer>
+    <span class="footer-hearts">♡ ♡ ♡</span>
+    <a href="https://instagram.com/pocapay_mx" target="_blank">@pocapay_mx</a> ·
+    <a href="https://www.facebook.com/groups/pocapayantiguo" target="_blank">Facebook</a> ·
+    pocapay.com
+  </footer>
+
+</body>
+</html>
